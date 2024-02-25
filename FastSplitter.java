@@ -1,6 +1,12 @@
 package io.github.easterngamer;
 
 public class FastSplitter {
+    /**
+     * Splits a {@link String} into a String array based on a {@link String} input. The string that is split on is removed from the array.
+     * @param content string to split on
+     * @param splitter string to split
+     * @return String array containing content between the splits.
+     */
     public static String[] fastSplit(final String content, final String splitter) {
         // Add provision for when the splitter is essentially nothing, i.e., split on every character.
         if (splitter.isEmpty()) {
